@@ -7,7 +7,7 @@
   $message = htmlspecialchars($_POST['message']);
   if(!empty($email) && !empty($message)){
     if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-      $receiver = "kuijpers555@hotmail.com"; //A MODIFIER
+      $receiver = "ahoutart.sbv@gmail.com"; //A MODIFIER
       $subject = "From: $name <$email>";
       $body = "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message\n\nRegards,\n$name";
       $sender = "From: $email";
