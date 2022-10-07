@@ -1,13 +1,18 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: 'Calibri', sans-serif;
 }
 
+html,
+body{
+    width:100%;
+}
+
 .logo {
     width: 20%;
-  }
+}
 
 .section-p1 {
     padding: 40px 80px;
@@ -95,51 +100,54 @@ h1{
 
 /* Home Page */
 
-.container1{
-    position: relative;
-}
-
 #hero{
     height: 130vh;
     width: 100%;
     background-image: url("images/insta_billy_pic2.jpg");
     background-size: cover;
-    padding: 0 80px;
+    text-align: center;
+    white-space: nowrap;
 }
 
 #hero h1{
     font-size: 62px;
     font-weight: 700;
-    text-align: center;
     color: aliceblue;
     text-shadow: rgb(0 0 0 / 55%) 1.6px 1.6px 1.6px;
     position: absolute;
-    top: 75px;
-    left: 930px;
+    top: 30%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    min-width: 650px;
+    padding-bottom: 4px;
 }
 
 #hero .first{
     font-size: 31px;
     font-weight: 700;
-    text-align: center;
     color:aliceblue;
     text-shadow: rgb(0 0 0 / 55%) 1.6px 1.6px 1.6px;
     position: absolute;
-    top: 130px;
-    left: 990px;
+    top: 38%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    min-width: 350px;
+    padding-bottom: 4px;
 }
 
 #hero .second{
+    line-height: 70px;
     font-size: 28px;
     font-weight: 700;
-    text-align: center;
     padding-bottom: 0px;
     color: aliceblue;
     margin-left: auto ;
     margin-right: 0;
     position: absolute;
-    top: 290px;
-    left: 860px;
+    top: 82%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    min-width: 500px;
 }
 
 /*FEATURE*/
@@ -151,6 +159,7 @@ h1{
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
+
 }
 
 /* Advantages */
@@ -169,7 +178,9 @@ h1{
 
 #pdf{
     text-align: center;
-    padding-top: 20px ;
+    padding-top: 1px ;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 /* TABLE PRICE */
@@ -193,14 +204,30 @@ h1{
 #price h2{
     color: #66cdfa;
     position: absolute;
-    top: 120px;
-    left: 85px;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
     font-weight: 700;
+    padding-right: 10px;
 }
 
-#headerTable tr {
+#price h4 {
+    color: #66cdfa;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: 700;
+    padding-right: 10px;
+    text-align: center;
+    min-width: 400px;
+}
+
+
+.headerTable th {
     background-color: #66cdfa;
-    color: #222;
+    color: #f3f3f3;
     text-align: left;
 }
 
@@ -221,18 +248,14 @@ h1{
     border-bottom: 2px solid #66cdfa;
 }
 
-#myTable tr.active-row {
-    font-weight: bold;
-    color: #009879;
-}
-
 /* CONTACT FORM */
 
 #contactForm {
-    height:35vh;
+    height: 45vh;
     background-image: url("images/insta_billy_pic1.jpg");
     background-repeat: no-repeat;
     background-position: 50% 30%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     padding-top: 10px;
@@ -240,9 +263,10 @@ h1{
 }
 
 #contactForm .form{
-    position: relative;
-    top: 6px;
-    left: 150px;
+    position: absolute;
+    top: 46%;
+    left: 22%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     padding: 0 3px;
@@ -262,18 +286,19 @@ h1{
     text-align: center;
     margin: 3px;
     width: 200px;
-    height: 130px;
+    height: 100px;
     padding: 10px;
 }
-
 
 #contactForm header {
     color: aliceblue;
     font-size: 45px;
     font-weight: 700;
     position: absolute;
-    top: 90px;
-    left: 1050px;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    min-width: 500px;
 }
 
 #contactForm header span {
@@ -284,6 +309,7 @@ h1{
 footer {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     background-color: #66cdfa;
     color: aliceblue;
@@ -295,13 +321,9 @@ footer .col {
     align-items: flex-start;
     justify-content: center;
     margin-bottom: 20px;
-    padding-left: 70px;
-    padding-right: 160px;
+    padding-left: 15px;
+    padding-right: 15px;
     color: aliceblue;
-}
-
-footer .logo {
-    margin-bottom: 20px
 }
 
 footer h4 {
@@ -325,7 +347,8 @@ footer a {
     color: aliceblue;
 }
 
-footer a:hover {
+footer a:hover,
+footer p:hover {
     color: #088178;
 }
 
@@ -333,4 +356,163 @@ footer .copyright{
     width: 100%;
     text-align: center;
     color: #222;
+}
+
+/* ICONS */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+.fa:hover {
+    opacity: 0.7;
+}
+  
+  /* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+  
+/* Instagram */
+.fa-instagram {
+    background: #55ACEE;
+    color: white;
+}
+
+/* MEDIA */
+
+@media (max-width: 799px) {
+    #hero {
+        height: 100vh;
+        background-position: 60% 30%;
+    }
+
+    #hero h1, 
+    #hero .first,
+    #hero .second {
+        left: 50%;
+        min-width: 375px;
+    }
+    
+    #feature {
+        height: 50vh;
+    }
+
+    #advantages {
+        height: 50vh;
+    }
+
+    #price h2 {
+        left: 10%;
+    }
+
+    #price h4 { 
+        left: 90%;
+        font-size: 7px;
+        min-width: 50px;
+        max-width: 60px;
+    }
+
+    #contactForm {
+        background-position: 40% 20%;
+    }
+}
+
+@media (max-width: 477px) {
+    #header {
+        padding: 10px 5px;
+    }
+
+    #hero {
+        height: 60vh;
+        background-position: 90% 30%;
+    }
+
+    #hero h1, 
+    #hero .first,
+    #hero .second {
+        left: 50%;
+    }
+
+    #hero h1 {
+        top: 15%;
+        font-size: 30px;
+        min-width: 375px;
+    }
+
+    #hero .first {
+        top: 20%;
+        font-size: 18px;
+        min-width: 375px;
+    }
+
+    #hero .second {
+        top: 45%;
+        font-size: 17px;
+        line-height: 20px;
+        min-width: none;
+        min-width: 375px;
+    }
+
+    #price h2 {
+        left: 10%;
+        font-size: 10px;
+    }
+
+    #price h4 {
+        min-width: 40px;
+        max-width: 60px; 
+    }
+
+    #myTable {
+        min-width: 370px;
+        max-width: 375px;
+        font-size: 0.4em;
+        padding: 0 0 0 0 ;
+    }
+
+
+    #contactForm header {
+        font-size: 25px;
+        font-weight: 700;
+        position: absolute;
+        top: 50%;
+        right: 90%;
+        min-width: 150px;
+        line-height: 25px;
+    }
+
+    #contactForm .form{
+        position: absolute;
+        top: 46%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        padding: 0 3px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #contactForm input{
+        text-align: center;
+        margin: 3px;
+        width: 120px;
+        height: 25px;
+        padding: 10px;
+        font-size: 10px;
+    }
+    
+    #contactForm textarea{
+        text-align: center;
+        margin: 3px;
+        width: 140px;
+        height: 45px;
+        padding: 10px;
+        font-size: 10px;
+    }
 }
